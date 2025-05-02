@@ -70,7 +70,9 @@ export default function Viewer() {
 
   return (
     <div>
-      <h2>Viewer</h2>
+      <h2 style={{color:'#E90064',
+        fontfamily: '"Tangerine", cursive'
+      }}>Viewer</h2>
       <video ref={videoRef} autoPlay playsInline />
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:5000'); // Your server address
+const socket = io('https://livestreaming-42xh.onrender.com'); // Your server address
 const HOST_ID = 'host123'; // fixed ID for host
 
 export default function Broadcast() {
@@ -67,8 +67,11 @@ export default function Broadcast() {
   }, []);
 
   return (
-    <div>
-      <h2>Broadcasting Live</h2>
+    <div className='broadcast'>
+      <h2 style={{color:'#E90064',
+        fontfamily: '"Tangerine", cursive'
+      }}>Broadcasting Live</h2>
+      <br />
       <video ref={videoRef} autoPlay muted playsInline style={{ width: '100%' }} />
     </div>
   );

@@ -1,13 +1,108 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+div{
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #640D6B;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 900;
+  font-style:italic;
+  letter-spacing: 2.5px;
+  font-size: 2.5rem !important;
+  color: #E90064;
+
+} */
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  font-size: 4.5rem !important;
+  color: #E90064;
+}
+.parents{
+  color:#ECA869 !important;
+  font-size: 1.8rem;
+
+}
+.parents span{
+  font-size: 1.5rem;
+}
+.subtitle{
+  color:#ECA869;
+  font-size:1.2rem;
+  margin-bottom: 30px;
+}
+.babies{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.babies img{
+  width: 390px;
+  height: 280px;
+  border-radius: 50px;
+}
+.stream{
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.left h2{
+  font-family: "Tangerine", cursive;
+  color:#ECA869;
+  border-bottom: 2px solid #E90064;
+  width: fit-content;
+  
+}
+.left p{
+  color:#ECA869;
+  font-size: 1.2rem;
+  
+}
+.right .btn {
+  position: absolute;
+  top:270%;
+  left:0;
+}
+.btn button{
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  margin-left: 8px;
+  border-radius: 20px;
+  background-color: #E90064;
+  color: #ECA869;
+  font-size: 1rem ;
+  font-weight: 600;
+}
+.btn button:hover{
+  background-color: #ECA869;
+  color:#E90064;
+  opacity: 1;
+}
+video{
+  border-radius: 20px;
+}
+footer{
+  background-color: #640D6B;
+  font-size: 1.2rem;
+  color: #E90064;
+  font-weight: 300;
+}
+p strong{
+  color: #ECA869;
 }
